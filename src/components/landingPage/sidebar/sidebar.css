@@ -1,0 +1,51 @@
+
+ .sideBar .MuiTabs-root{min-height: 100%;}
+ .sideBar .MuiTabs-root .MuiTabs-flexContainer{height: 100%;}
+ .sideBar .MuiTabs-root .MuiTab-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: normal;
+    flex-direction: row;
+    justify-content: normal;
+    white-space: nowrap;
+}
+.sideBar .MuiTabs-flexContainer {
+    display: flex;
+    flex-direction: column;
+}
+.sideBar .MuiTabs-fixed {
+    width: 100%;
+    overflow-x: initial !important;
+    overflow: initial !important;
+}
+.sideBar.MuiPaper-root {
+    background-color: #ef5350;
+}
+.sideBar .MuiTab-labelIcon.MuiTab-root{
+    min-height: 50px;
+    padding:6px 26px;
+}
+.sideBar .MuiTab-fullWidth {
+    flex-grow: initial;
+    max-width: none;
+    flex-basis: initial;
+    flex-shrink: initial;
+}
+.sideBar .MuiTab-fullWidth:last-child{margin-top: auto;}
+.sideBar .MuiTab-textColorSecondary{color:#ffcccc !important;text-decoration: none;}
+.sideBar .MuiTab-textColorSecondary:hover .MuiTab-wrapper{color:#fff !important;}
+.sideBar .MuiTab-textColorSecondary.Mui-selected{
+    color:#fff !important;
+}
+
+img.text-center{padding:15px 0px;width:150px;}
+.noBorderRadius.MuiPaper-rounded{border-radius: 0px;}
+.userGrid .makeStyles-root-140{justify-content: flex-end;}
+.sideBar .MuiSvgIcon-root {
+    fill:#ffcccc;
+    width: 25px;
+    margin-right: 25px;}
+    .sideBar .MuiTab-textColorSecondary.Mui-selected .MuiTab-wrapper .MuiSvgIcon-root{fill:#fff;}
+    .sideBar .MuiTab-textColorSecondary:hover .MuiTab-wrapper .MuiSvgIcon-root{fill:#fff;}
+    .sideBar.MuiPaper-root{width: 75px; transition: width 0.5s;}
+    .sideBar.MuiPaper-root:hover{width: 230px;}

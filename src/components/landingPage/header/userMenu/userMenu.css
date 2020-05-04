@@ -1,0 +1,11 @@
+.userMenu{position: relative;padding: 12px 0px;}
+.userMenu div[x-placement="bottom"]{
+    right:0px !important;
+    transform: none!important;
+    left:auto!important;
+    top:52px !important;
+}
+.userMenu div[x-placement="bottom"] .MuiPaper-root{background: #fff;}
+.userMenu .MuiButton-text{text-transform: capitalize;padding-right: 0;}
+.userMenu .MuiSvgIcon-root{font-size: 2.2rem;margin-left:10px;}
+.field .MuiGrid-root.MuiGrid-item{margin-bottom:20px;}
