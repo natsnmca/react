@@ -26,3 +26,25 @@ it("sumbits the form", async () => {
   expect(onLogin).not.toHaveBeenCalled(); 
 
 });
+
+it("not sumbits the form", async () => {
+  const onLogin = jest.fn();
+  const { getByText, getByTestId } = render(<Login onLogin={onLogin} />);
+
+  expect(getByText("Enter your details below to continue")).toHaveClass("loginSub-txt");
+  const emailInput = getByTestId("Email");
+  const passwordInput = getByTestId("Password");
+  const form = getByTestId("form");
+  emailInput.value = '';
+  passwordInput.value = 'Vasa123';
+  act(() => {
+  fireEvent.change(emailInput);
+  fireEvent.change(passwordInput);
+});
+ //expect(emailInput.value).toBe("");
+ //expect(passwordInput.value).toBe("Vasa123");
+  await act(() => {
+    fireEvent.submit(form);
+  });
+  expect(onLogin).not.toHaveBeenCalled(); 
+});
