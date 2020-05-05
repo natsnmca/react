@@ -18,8 +18,8 @@ it("sumbits the form", async () => {
   fireEvent.change(emailInput);
   fireEvent.change(passwordInput);
 });
- expect(emailInput.value).toBe("vasanth.rajan@sword-in.com");
- expect(passwordInput.value).toBe("admin123");
+ expect(emailInput.value).toBe("admin@gmail.com");
+ expect(passwordInput.value).toBe("Vasa123");
   await act(() => {
     fireEvent.submit(form);
   });
