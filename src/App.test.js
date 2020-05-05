@@ -12,8 +12,8 @@ it("sumbits the form", async () => {
   const emailInput = getByTestId("Email");
   const passwordInput = getByTestId("Password");
   const form = getByTestId("form");
-  emailInput.value = 'vasanth.rajan@sword-in.com';
-  passwordInput.value = 'admin123';
+  emailInput.value = 'admin@gmail.com';
+  passwordInput.value = 'Vasa123';
   act(() => {
   fireEvent.change(emailInput);
   fireEvent.change(passwordInput);
